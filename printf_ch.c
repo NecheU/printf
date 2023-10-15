@@ -1,4 +1,4 @@
-#include "maim.h"
+#include "main.h"
 
 /**
  * printf_char - Function that print a char
