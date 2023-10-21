@@ -5,6 +5,19 @@
 #include <limits.h>
 #include <stdio.h>
 
+/**
+ * struct format - converter for printf
+ * @ph: type char pointer of the specifier
+ * @function: function for the conversion specifier
+ * 
+ */
+
+typedef struct format
+{
+		char *ph;
+			int (*function)();
+} convert;
+
 int _putchar(char c);
 int printf_char(va_list contents);
 int _printf(const char *format, ...);
