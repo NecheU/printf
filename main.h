@@ -14,5 +14,6 @@ int _strlenc(const char *str);
 int printf_37(void);
 int printf_rot_13(va_list char_rot);
 int printf_str_reverse(va_list argm);
+int get_flag(char s, flags_t *f);
 
 #endif
