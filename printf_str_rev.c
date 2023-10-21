@@ -9,7 +9,7 @@
 int printf_str_reverse(va_list argm)
 {
 	int a, b = 0;
-	char *s = va_arg(argm, char);
+	char *s = va_arg(argm, int);
 
 	if (s == NULL)
 

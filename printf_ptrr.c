@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 int _strcmp(char *, char *);
 
@@ -18,7 +17,7 @@ int print_pointer(va_list list)
 	hex = itoa(va_arg(list, unsigned long int ), 16);
 
 	if (!_strcmp(hex, "0"))
-		return (print("(nil)");
+		return (printf("(nil)"));
 
 		size = print("0x");
 
@@ -48,7 +47,7 @@ int _strcmp(char *s1, char *s2)
 	for (u = 0; s1[u] != '\0'; u++)
 	{
 		if (s1[u] != s2[u])
-			return s1([u] - s2[u]);
+			return (s1[u] - s2[u]);
 	}
 
 	return (0);
